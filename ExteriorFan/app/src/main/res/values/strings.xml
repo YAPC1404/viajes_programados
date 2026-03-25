@@ -2,4 +2,19 @@
     <string name="app_name">ExteriorFan</string>
     <string name="title_activity_salidas">Salidas</string>
     <string name="title_activity_crear_salidas">CrearSalidas</string>
+
+    <string name="titulo_crear_salida">Crear salida</string>
+    <string name="nombre_de_la_salida">Nombre de la salida</string>
+    <string name="descripcion">Descripcion (Opcional) </string>
+    <string name="hint_lugar_destino">Seleccione destino</string>
+    <string name="hint_hora_entrada">Entrada</string>
+    <string name="hint_hora_salida">Salida</string>
+    <string name="hint_seleccionar_fecha">Seleccione fecha</string>
+    <string name="btn_guardarSalida">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+    <string name="btn_Regresar">Regresar</string>
+    <string name="titulo_historial">Historial</string>
+    <string name="btn_historial_salidas">Salidas</string>
+    <string name="btn_historial_mensajes">Mensajes</string>
 </resources>
