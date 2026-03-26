@@ -1,5 +1,23 @@
 <resources>
+
     <string name="app_name">ExteriorFan</string>
-    <string name="title_activity_salidas">Salidas</string>
-    <string name="title_activity_crear_salidas">CrearSalidas</string>
+
+    <!-- Pantalla principal -->
+
+    <string name="logo_text">ExteriorFan</string>
+
+    <string name="buscar_salida">Buscar salida</string>
+
+    <string name="nombre_salida">Nombre de la salida</string>
+
+    <string name="estado_salida">Estado de la salida</string>
+
+    <string name="boton_agregar">+</string>
+
+    <string name="descripcion_lista">Lista de salidas</string>
+
+    <string name="descripcion_config">Configuración</string>
+
+    <string name="descripcion_notificaciones">Notificaciones</string>
+
 </resources>

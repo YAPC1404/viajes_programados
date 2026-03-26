@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- TITULO -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- SWITCH NOTIFICACIONES -->
+
+    <Switch
+        android:id="@+id/switchNotificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar notificaciones"
+        android:layout_marginTop="20dp"/>
+
+    <!-- INPUT TIEMPO -->
+
+    <EditText
+        android:id="@+id/inputTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minutos antes (ej: 15)"
+        android:inputType="number"
+        android:layout_marginTop="20dp"/>
+
+    <!-- BOTON GUARDAR -->
+
+    <Button
+        android:id="@+id/botonGuardarConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar configuración"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

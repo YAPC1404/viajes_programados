@@ -14,49 +14,35 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import androidx.savedstate.serialization.saved
 import androidx.navigation.compose.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import android.widget.ImageView
+import android.content.Intent
+class MainActivity : AppCompatActivity() {
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            val navController = rememberNavController()
-            NavHost(
-                navController = navController,
-                startDestination = "principal"
-            ){
-                composable("Principal"){
-                    PantallaPrincipal(navController)
-                }
-                composable("Crear"){
-                    CrearSalidas(navController)
-                }
-            }
-        }
-    }
-}
+        // Conectar XML
+        setContentView(R.layout.pantalla_principal)
+        val recycler = findViewById<RecyclerView>(R.id.recyclerSalidas)
 
-@Composable
-fun PantallaPrincipal(navController: NavHostController){
-    Column{
-        Text("Pantalla principal")
+        recycler.layoutManager = LinearLayoutManager(this)
 
-        Button(onClick = {
-            navController.navigate("Crear")
-        }){
-            Text("Crear salida")
-        }
-    }
-}
+        val lista = listOf(
+            Salida("Ir al trabajo", "A tiempo"),
+            Salida("Ir al gym", "Retrasado"),
+            Salida("Ir a la escuela", "A tiempo")
+        )
 
-@Composable
-fun CrearSalidas(navController: NavHostController){
-    Column{
-        Text("Crear salida")
+        val adapter = SalidaAdapter(lista)
+        recycler.adapter = adapter
 
-        Button(onClick = {
-            navController.popBackStack()
-        }){
-            Text("Volver")
+        val iconConfig = findViewById<ImageView>(R.id.iconConfig)
+
+        iconConfig.setOnClickListener {
+            val intent = Intent(this, ConfiguracionActivity::class.java)
+            startActivity(intent)
         }
     }
 }
