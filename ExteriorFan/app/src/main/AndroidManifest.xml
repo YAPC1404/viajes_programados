@@ -14,12 +14,17 @@
         <activity
             android:name=".ConfiguracionActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ActivityHistorial"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCrearSalida" android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -9,6 +9,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.internal.composableLambda
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
@@ -26,9 +27,7 @@ class MainActivity : AppCompatActivity() {
         // Conectar XML
         setContentView(R.layout.pantalla_principal)
         val recycler = findViewById<RecyclerView>(R.id.recyclerSalidas)
-
         recycler.layoutManager = LinearLayoutManager(this)
-
         val lista = listOf(
             Salida("Ir al trabajo", "A tiempo"),
             Salida("Ir al gym", "Retrasado"),
