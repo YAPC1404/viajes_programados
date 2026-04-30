@@ -15,7 +15,7 @@ import android.widget.Switch
 import android.widget.LinearLayout
 import android.widget.Button
 import android.widget.Toast
-
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 class ActivityCrearSalida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class ActivityCrearSalida : AppCompatActivity() {
         val etFecha = findViewById<EditText>(R.id.etFecha)
         val switchTipo = findViewById<Switch>(R.id.switchTipoSalida)
         val layoutDias = findViewById<LinearLayout>(R.id.layoutDias)
-        val btnGuardar = findViewById<Button>(R.id.btnGuardar)
+        val btnGuardar = findViewById<FloatingActionButton>(R.id.btnGuardar)
 
         etFecha.visibility = View.GONE
         layoutDias.visibility = View.VISIBLE

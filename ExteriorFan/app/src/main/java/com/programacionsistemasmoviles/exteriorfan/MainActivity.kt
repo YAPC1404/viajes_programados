@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.widget.ImageView
 import android.content.Intent
+import android.widget.Button
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,5 +44,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ConfiguracionActivity::class.java)
             startActivity(intent)
         }
+
+        val btnAgregar = findViewById<Button>(R.id.botonAgregar)
+
+        btnAgregar.setOnClickListener {
+            val intent = Intent(this, ActivityCrearSalida::class.java)
+            startActivity(intent)
+        }
+
+        val iconHistorial = findViewById<ImageView>(R.id.iconLista)
+
+        iconHistorial.setOnClickListener {
+            val intent = Intent(this, ActivityHistorial::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -4,6 +4,11 @@
     <color name="Secundario">#85C7E6</color>
     <color name="TextoOscuro">#2C2C2C</color>
     <color name="black">#FF000000</color>
-   <color name="gray">#504949</color>
+    <color name="gray">#504949</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
 </resources>
